@@ -34,9 +34,17 @@ rm -rf $RPM_BUILD_ROOT
 DESTDIR=%{buildroot} scons install
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="GScore" longtitle="Musical Score Editor" section="Office/Publishing"
+mkdir -p $RPM_BUILD_ROOT/%{_datadir}/applications/mandriva-%{name}.desktop
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Name=GScore
+Comment=Musical Score Editor
+Exec=%name
+Icon=%name
+Terminal=false
+Type=Application
+Categories=X-MandrivaLinux-Office-Publishing;Sound;Player
 EOF
 
 #icons
@@ -60,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog README TODO VERSION
 %{_bindir}/%name
-%{_menudir}/%name
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_datadir}/%name
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
