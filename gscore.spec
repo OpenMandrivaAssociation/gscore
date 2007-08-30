@@ -43,7 +43,7 @@ Exec=%name
 Icon=%name
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-Office-Publishing;Sound;Player
+Categories=X-MandrivaLinux-Office-Publishing;Sound;Player;
 EOF
 
 #icons
