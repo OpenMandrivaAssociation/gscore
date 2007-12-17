@@ -12,7 +12,6 @@ Patch0:		gscore-0.0.8-install.patch.bz2
 URL:		http://www.gscore.org/
 License:	GPL
 Group:		Publishing
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	ImageMagick
 BuildRequires:	libglade2.0-devel
 BuildRequires:	gtk2-devel
