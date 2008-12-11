@@ -13,7 +13,7 @@ URL:		http://www.gscore.org/
 License:	GPL
 Group:		Publishing
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 BuildRequires:	libglade2.0-devel
 BuildRequires:	gtk2-devel
 BuildRequires:	scons
