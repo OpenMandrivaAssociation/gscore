@@ -1,6 +1,6 @@
 %define name	gscore
 %define version	0.0.8
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: 	 	%{name}
 Summary: 	Musical score editor
