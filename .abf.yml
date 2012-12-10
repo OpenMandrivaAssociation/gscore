@@ -1,2 +1,4 @@
 sources:
-  "gscore-0.0.8.tar.bz2:"	9231456416b20acd5b8d27b920e6633c449b4238
+  "gscore-0.0.8-install.patch.bz2": 7abadcccfdef8737e64aca61f611e1dd8fe31963
+  gscore-0.0.8.tar.bz2: 9231456416b20acd5b8d27b920e6633c449b4238
+---

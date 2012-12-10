@@ -1,0 +1,11 @@
+--- gscore-0.0.8/SConstruct.gmodule	2012-11-02 15:06:45.600835256 +0400
++++ gscore-0.0.8/SConstruct	2012-11-02 15:12:04.170789758 +0400
+@@ -89,7 +89,7 @@ env = conf.Finish()
+  
+ # Now, build: 
+  
+-env.ParseConfig('pkg-config --cflags --libs libglade-2.0') 
++env.ParseConfig('pkg-config --cflags --libs libglade-2.0 gmodule-2.0') 
+ 
+ 
+ env.Alias('install', '$instprefix/bin')
