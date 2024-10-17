@@ -11,7 +11,7 @@ Source0:		http://www.gscore.org/targz/%{name}-%{version}.tar.bz2
 source1:		.abf.yml
 Patch0:		gscore-0.0.8-install.patch.bz2
 patch1:		gscore-0.0.8.gmodule.patch
-URL:		http://www.gscore.org/
+URL:		https://www.gscore.org/
 License:	GPL
 Group:		Publishing
 BuildRequires:	imagemagick
